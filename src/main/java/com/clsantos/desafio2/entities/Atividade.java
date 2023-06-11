@@ -31,11 +31,12 @@ public class Atividade {
     public Atividade() {
     }
 
-    public Atividade(Integer id, String nome, String descricao, Double preco) {
+    public Atividade(Integer id, String nome, String descricao, Double preco, Categoria categoria) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
+        this.categoria = categoria;
     }
 
     public Integer getId() {
