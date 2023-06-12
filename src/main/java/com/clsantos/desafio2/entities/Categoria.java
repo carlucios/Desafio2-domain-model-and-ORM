@@ -1,6 +1,7 @@
 package com.clsantos.desafio2.entities;
 
 import jakarta.persistence.*;
+import org.springframework.web.servlet.tags.form.TextareaTag;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,7 @@ public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(columnDefinition = "TEXT")
     private String descricao;
 
     @OneToMany(mappedBy = "categoria")
